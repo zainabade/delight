@@ -233,7 +233,7 @@ header .menu {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #2c2424;
+  background: #a6acec;
   border-radius: 5px;
   height: 40vh;
   -webkit-box-pack: center;
@@ -243,6 +243,8 @@ header .menu {
       -ms-flex-align: center;
           align-items: center;
   max-width: 900px;
+  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .jumbotron div .smaller-title {
@@ -258,7 +260,7 @@ header .menu {
 }
 
 .jumbotron-active .jumbotron {
-  background-color: #2c2424;
+  background-color: #a6acec;
 }
 
 .below-jumbo {
@@ -275,7 +277,7 @@ header .menu {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 50vh;
+  height: 100vh;
   margin: 0 auto;
 }
 
@@ -404,8 +406,10 @@ article {
 }
 
 .about-intro .intro-text {
-  font-size: 20px;
+  font-size: 16px;
   width: 50%;
+  padding-left: 10px;
+  padding-bottom: 20px;
 }
 
 .about-intro .intro-text p {
@@ -455,18 +459,24 @@ article {
 }
 
 .box1 {
-  background-color: #a89a9a;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .box2 {
-  background-color: #2c2424;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .box3 {
-  background-color: #a89a9a;
-  border-radius: 10px;
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .service-section {
@@ -503,7 +513,7 @@ article {
 
 .service-section .service-heading .service-title {
   font-size: 38px;
-  border-bottom: 2px dotted #fff;
+  border-bottom: 2px dotted #8c91cc;
 }
 
 .service-section .service-p {
@@ -528,8 +538,10 @@ article {
 }
 
 .blog-section {
-  width: 80%;
+  width: 70%;
   height: 90vh;
+  -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,7 +592,6 @@ article {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-top: 20%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -590,14 +601,14 @@ article {
   }
   .heading-text {
     width: 100%;
-    margin-top: 30vh;
+    margin-top: 80vh;
     text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
   .heading-text .title {
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
   }
   .jumbotron {
@@ -615,7 +626,7 @@ article {
         -ms-flex-align: center;
             align-items: center;
     margin-bottom: 50px;
-    margin-top: 90px;
+    margin-top: 50vh;
     height: 50vh;
   }
   .jumbotron div {
@@ -626,9 +637,13 @@ article {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    background: #a6acec;
+    background-color: #a6acec;
     border-radius: 5px;
+    border: 2px solid #a6acec;
+    -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     height: 40vh;
+    width: 70%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -645,7 +660,7 @@ article {
   .jumbotron div p {
     width: 80%;
     opacity: 0.85;
-    color: #f7ecec;
+    color: #111;
   }
   .below-jumbo {
     display: -webkit-box;
@@ -662,6 +677,7 @@ article {
         -ms-flex-pack: center;
             justify-content: center;
     height: 50vh;
+    margin-top: 20vh;
   }
   .below-jumbo .bj-img {
     padding-top: 10vh;
@@ -720,8 +736,13 @@ article {
   }
   .about-intro .about-img {
     width: 100%;
-    border: 2px solid red;
-    margin: 0 auto;
+    margin-left: 15%;
+  }
+  .blog-section {
+    width: 80%;
+    border: none;
+    -webkit-box-shadow: 10px 20px 25px -5px rgba(0, 0, 0, 0.1), 10px 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 10px 20px 25px -5px rgba(0, 0, 0, 0.1), 10px 10px 10px -5px rgba(0, 0, 0, 0.04);
   }
 }
 
@@ -865,8 +886,12 @@ article {
         -ms-flex-direction: column;
             flex-direction: column;
     background: #a6acec;
+    border: 2px solid #a6acec;
+    -webkit-box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     border-radius: 5px;
     height: 40vh;
+    width: 80%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -874,7 +899,6 @@ article {
         -ms-flex-align: center;
             align-items: center;
     max-width: 900px;
-    z-index: -1;
   }
   .jumbotron div .smaller-title {
     font-size: 35px;
@@ -884,7 +908,7 @@ article {
   .jumbotron div p {
     width: 80%;
     opacity: 0.85;
-    color: #f7ecec;
+    color: #111;
   }
   .below-jumbo {
     display: -webkit-box;
@@ -960,6 +984,10 @@ article {
   }
   .about-intro .about-img {
     width: 100%;
+  }
+  .blog-section {
+    width: 100%;
+    border: 2px solid #a6acec;
   }
 }
 /*# sourceMappingURL=main.css.map */

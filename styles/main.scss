@@ -158,12 +158,13 @@ header {
     div {
         display: flex;
         flex-direction: column;
-        background: rgb(44, 36, 36);
+        background: #a6acec;
         border-radius: 5px;
         height: 40vh;
         justify-content: center;
         align-items: center;
         max-width: 900px;
+        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
         .smaller-title {
             font-size: 35px;
             opacity: 1;
@@ -178,7 +179,7 @@ header {
 }
 .jumbotron-active {
     .jumbotron {
-        background-color: rgb(44, 36, 36);
+        background-color: #a6acec;
     }
 }
 .below-jumbo {
@@ -186,7 +187,7 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
     margin: 0 auto;
     .bj-img {
         margin-left: 10%;
@@ -270,8 +271,10 @@ article {
         max-width: 500px;
     }
     .intro-text {
-        font-size: 20px;
+        font-size: 16px;
         width: 50%;
+        padding-left: 10px;
+        padding-bottom: 20px;
         p {
             text-align: left;
             padding: 10px;
@@ -312,16 +315,19 @@ article {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 .box1 {
-    background-color: rgb(168, 154, 154);
-    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 .box2 {
-    background-color: rgb(44, 36, 36);
-    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 .box3 {
-    background-color: rgb(168, 154, 154);
-    border-radius: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 .service-section{
    width: 100%;
@@ -338,7 +344,7 @@ article {
        align-items: center;
        .service-title{
            font-size: 38px;
-           border-bottom: 2px dotted #fff;
+           border-bottom: 2px dotted #8c91cc; 
        }
    }
    .service-p {
@@ -354,8 +360,9 @@ article {
 }
 // Blog Page
 .blog-section {
-    width: 80%;
+    width: 70%;
     height: 90vh;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -402,17 +409,16 @@ article {
     } 
     .landing {
         flex-direction: column;
-        margin-top: 20%;
         justify-content: center;
         align-items: center;
     }
     .heading-text {
         width: 100%;
-        margin-top: 30vh;
+        margin-top: 80vh;
         text-align: center;
         align-items: center;
         .title {
-            font-size: 35px;
+            font-size: 30px;
             text-align: center;
         }
     }
@@ -422,14 +428,17 @@ article {
         justify-content: center;
         align-items: center;
         margin-bottom: 50px;
-        margin-top: 90px;
+        margin-top: 50vh;
         height: 50vh;
         div {
             display: flex;
             flex-direction: column;
-            background: #a6acec;
+            background-color: #a6acec;
             border-radius: 5px;
+            border: 2px solid #a6acec;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             height: 40vh;
+            width: 70%;
             justify-content: center;
             align-items: center;
             max-width: 900px;
@@ -441,7 +450,7 @@ article {
             p {
                 width: 80%;
                 opacity: 0.85;
-                color: rgb(247, 236, 236);
+                color: #111;
             }
         }
     }
@@ -451,6 +460,7 @@ article {
         align-items: center;
         justify-content: center;
         height: 50vh;
+        margin-top: 20vh;
         .bj-img {
             padding-top: 10vh;
             padding-bottom: 10vh;
@@ -497,9 +507,14 @@ article {
         }
         .about-img {
             width: 100%;
-            border: 2px solid red;
-            margin: 0 auto; 
+            margin-left: 15%; 
         }
+    }
+    //Blog Page  
+    .blog-section {
+        width: 80%;
+        border: none;
+        box-shadow: 10px 20px 25px -5px rgba(0, 0, 0, 0.1), 10px 10px 10px -5px rgba(0, 0, 0, 0.04);
     }
 }
 
@@ -604,12 +619,14 @@ article {
             display: flex;
             flex-direction: column;
             background: #a6acec;
+            border: 2px solid #a6acec;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
             border-radius: 5px;
             height: 40vh;
+            width: 80%;
             justify-content: center;
             align-items: center;
             max-width: 900px;
-            z-index: -1;
             .smaller-title {
                 font-size: 35px;
                 opacity: 1;
@@ -618,7 +635,7 @@ article {
             p {
                 width: 80%;
                 opacity: 0.85;
-                color: rgb(247, 236, 236);
+                color: #111;
             }
         }
     }
@@ -676,6 +693,11 @@ article {
         .about-img {
             width: 100%;
         }
+    }
+    //Blog Page 
+    .blog-section {
+        width: 100%;
+        border: 2px solid #a6acec;
     }
 
 }
