@@ -3,17 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../wp-admin/css/styles/main.css"> <!--add https://nuratadelopo.com/ to the href-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <title>Welcome to Delight</title>
 </head>
 <body>
-    <header>
+   <!-- <header>
         <nav class="navbar">
-            <ul class>
+
+        <div class="burger">
+            <a href="#">
+            <div class="line"></div>
+        </a>
+        </div>
+        </nav>
+    </header>-->
+
+    <!--<nav class="navbar sticky-top navbar-light bg-light">
+        <ul class>
             <div class="logoSection">
-            <a class="logo" href="#">Nurat Adelopo</a>
+            <a class="logo" href="#">Delight</a>
             </div>
             <ul class="menu">
                 <li><a href="#">Home</a></li>
@@ -23,36 +34,54 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </ul>
-        <div class="burger">
-            <a href="#">
-            <div class="line"></div>
-        </a>
+    </nav>-->
+
+    <div class="header"></div>
+
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Delight</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
         </div>
-        </nav>
-    </header>
+    </nav>
 
     <section class="landing"> 
         <div class="heading-text">
-            <p class="title">Counselling & Psychotherapy Services</p>
+            <p class="title">Hypnotherapy, Counselling and Wellness Therapy</p>
             <p>A new approach to changing your mindset and improving your mental state.</p>
-            <div class="btn"><a href="about.html">Contact &#8594;</a></div>
+            <div class="btn"><a href="contact.html">Contact &#8594;</a></div>
         </div>
         <div class="heading-img-div">
-            <img class="heading-img" src="./img/counselling-small.jpg" alt="" width=500px alt="counselling image">
+            <img class="heading-img" src="../wp-admin/images/img/counselling-small.jpg" alt="" width=500px alt="counselling image">
              </picture>
         </div>
     </section>
 
     <section class="jumbotron">
         <div>
-            <p class="smaller-title">Free counselling sessions</p>
+            <p class="smaller-title">Counselling sessions</p>
             <p>A little bit more text here to explain your services in a bit more detail. Something that is important to prospective clients.</p>
         </div>
     </section>
 
     <section class="below-jumbo">
         <div class="bj-img">
-            <img src="img/mental-health.png" alt="">
+            <img src="../wp-admin/images/img/mental-health.png" alt="">
         </div>
         <div class="bj-text">
             <p class="smaller-title">Relax...</p>
@@ -63,19 +92,57 @@
     <footer>
         <div class="inner-footer">
             <div class="footer-col">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </div>
             <div class="footer-col">
-                <li><a href="#">My Approach</a></li>
-                <li><a href="#">My Ethos</a></li>
-                <li><a href="#">Book a Consultation</a></li>
+                <li><a href="about.html">My Approach</a></li>
+                <li><a href="about.html">My Ethos</a></li>
+                <li><a href="contact.html">Book a Consultation</a></li>
             </div>
         </div>
-    </footer>
+    </footer> 
 
-    <script src="script.js"></script>
+
+
+    <!--<section class="container coming-soon">
+        <p class="title">Delight Hynotherapy Center</p>
+        <p>Coming soon</p>
+        <div class="image-div">
+            <img src="../wp-admin/images/img/build.png" alt="">
+        </div>
+    </section>
+
+    <div class="container">
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #a56cc1;"></div>
+        </div>
+    </div>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+        $('.navTrigger').click(function () {
+        $(this).toggleClass('active');
+        console.log("Clicked menu");
+        $("#mainListDiv").toggleClass("show_list");
+        $("#mainListDiv").fadeIn();
+
+    });
+</script>
+
 
 </body>
 </html>
