@@ -136,7 +136,7 @@ body {
         padding-left: 3rem;
         a {
             text-decoration: none;
-            color: #fff;
+            color: #333;
             font-size: 2rem;
         }
     }
@@ -157,12 +157,12 @@ body {
                 padding-right: 3rem;
                 a {
                     text-decoration: none;
-                    color: #fff;
+                    color: #333;
                     line-height: 65px;
-                    font-size: 1.5rem;
+                    font-size: 1rem;
                 }
                 a:hover {
-                    color: #00E676;
+                    border-bottom: 2px solid #7715a8;
                 }
             }
         }
@@ -183,11 +183,11 @@ body {
 }
 
 
-/* Media qurey section */
+/* Media query section */
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .container {
-        margin: 0;
+        margin: 0px;
     }
 }
 
@@ -215,7 +215,7 @@ body {
             right: 0;
             left: 0;
             bottom: 0;
-            background-color: #5d3e6d;
+            background-color: #fff;
             /*same background color of navbar*/
             background-position: center top;
             li {
@@ -246,10 +246,10 @@ body {
     margin: auto;
     position: absolute;
     right: 30px;
-    top: 5px;
+    top: 20px;
     bottom: 0;
     i {
-        background-color: #fff;
+        background-color: #333;
         border-radius: 2px;
         content: '';
         display: block;
@@ -359,7 +359,8 @@ body {
 
 .affix {
     padding: 0px;
-    background-color: #5d3e6d;
+    background-color: #fff;
+    box-shadow: 0px 0.5px 1px 0px rgb(156, 153, 153);
 }
 
 
@@ -588,7 +589,8 @@ article {
     margin-top: 30px;
     grid-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    padding-top: 30px;
 }
 .box1 {
     border: none;
@@ -643,7 +645,7 @@ article {
     align-items: center;
     flex-direction: column;
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 10%;
     .blog-title {
         font-size: 25px;
         margin: 20px;
